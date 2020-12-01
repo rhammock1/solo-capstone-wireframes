@@ -54,3 +54,12 @@ hr {
   color: white;
   text-align: center;
 }
+h3 {
+  text-align: center;
+}
+
+.map-container {
+  width:200px;
+  height:200px;
+  background-color:grey;
+}
