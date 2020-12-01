@@ -40,5 +40,17 @@ fieldset {
   height: 500px;
   background-color:blue;
   border-radius: 50%;
-  
+
+}
+hr {
+  height:10px;
+  background-color:black;
+}
+.result-container {
+  width:75%;
+  padding:10px 0;
+  margin: auto;
+  background-color: orangered;
+  color: white;
+  text-align: center;
 }
