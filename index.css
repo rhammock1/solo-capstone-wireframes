@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width:85%;
+  padding:0;
+  margin:auto;
+}
+fieldset {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+
+}
+.form-group {
+  margin: 5px;
+}
+.grid1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start:1;
+  grid-row-end: 1;
+  
+}
+.grid2 {
+  grid-column-start:2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+ 
+}
+.grid3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start:1;
+  grid-row-end: 1;
+}
+.wheel-container {
+  width: 500px;
+  height: 500px;
+  background-color:blue;
+  border-radius: 50%;
+  
+}
