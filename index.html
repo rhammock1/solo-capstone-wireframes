@@ -7,7 +7,49 @@
 </head>
 <body>
   <!--  Going to seperate by component -->
-
-  
+<header>
+  <h1>What's For Dinner?</h1>
+  <div>
+    <a href='#'>Login</a>
+  </div>
+</header>
+<main>
+  <div class='filter-container'>
+    <form class='filter-form'>
+      <fieldset>
+        <legend>Filter</legend>
+        <div class='form-group'>
+          <label for='category'>Eat out or Eat in?</label>
+          <select id='category' name='category'>
+          <option value=null>Choose one:</option>
+          <option id='restaurant' value='restaurant'>Out!</option>
+          <option id='recipe' value='recipe'>In!</option>
+          <option id='both' value='both'>Either!</option>
+          </select>
+        </div>
+       
+        <!-- Conditionally render the rest of the filters based on which category they choose -->
+        <div class='form-group'>
+          <label for='zipcode'>Zip Code:</label>
+          <input type='text' id='zipcode' name='zipcode' pattern=\b\d{5}\b />
+        </div>
+        <div class='form-group'>
+          <label for='cost-rating'>Cost Rating:</label>
+          <select id='cost-rating' name='cost-rating'>
+            <option value=null></option>
+            <option value='1'>$</option>
+            <option value='2'>$$</option>
+            <option value='3'>$$$</option>
+            <option value='4'>$$$$</option>
+            <option value='5'>$$$$$</option>
+          </select>
+        </div>
+        
+        <button type='submit'>Let's See</button>
+      </fieldset>
+      
+    </form>
+  </div>
+</main>
 </body>
 </html>
