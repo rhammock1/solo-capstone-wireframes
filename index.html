@@ -64,7 +64,7 @@
     <button>Spin Again</button>
   </div>
   <hr />
-  <!-- Detailed view component -->
+  <!-- Detailed view  restaurant component -->
   <div class='details-container'>
     <h3>Name</h3>
     <div class='details-container'>
@@ -76,6 +76,134 @@
     </div>
 
   </div>
+  <hr />
+  <!-- Detailed view  recipe component -->
+  <div class='details-container'>
+    <h3>Name</h3>
+    <div class='details-container'>
+      <div class='ingredients'>
+        <ul>
+          <li>ingredients1 </li>
+          <li>ingredients2 </li>
+        </ul>
+      </div>
+      <div class='steps'>
+        <p>step1</p>
+        <p>step2</p>
+      </div>
+      <button>Back</button>
+    </div>
+
+  </div>
+  <hr />
+  <!-- login / signup signup is only different in the validation and their zip code and adding another password field to make sure they match -->
+  <div class='login-container'>
+    <form class='login-credentials'>
+      <fieldset>
+        <legend>login</legend>
+        <div class='form-group'>
+          <label for="username">Username:</label>
+          <input type='text' id='username' name='username' required />
+        </div>
+        <div class='form-group'>
+          <label for='password'>Password:</label>
+          <input type='password' id='password' name='password' required />
+        </div>
+        <button type='submit'>Login</button>
+      <p>Need an account? <br/><a href='#'>Sign up</a></p>
+      </fieldset>
+    </form>
+  </div>
+  <hr />
+  <!-- Logged in view home screen -->
+<header>
+  <h1>What's For Dinner?</h1>
+  <div>
+    <p>Hello, logged in person</p>
+    <a href='#'>Sign Out</a>
+  </div>
+</header>
+
+ <nav>
+   <ul>
+     <a href='#'><li>Favorites</li></a>
+     <a href='#'><li>My Restaurants</li></a>
+     <a href='#'><li>My Recipes</li></a>
+     <a href='#'><li>Add New</li></a>
+   </ul>
+ </nav> 
+<div class='filter-container'>
+    <form class='filter-form'>
+      <fieldset>
+        <legend><h2>Filter</h2></legend>
+        <div class='form-group grid1'>
+          <label for='category'>Eat out or Eat in?</label>
+          <select id='category' name='category'>
+          <option value=null>Choose one:</option>
+          <option id='restaurant' value='restaurant'>Out!</option>
+          <option id='recipe' value='recipe'>In!</option>
+          <option id='both' value='both'>Either!</option>
+          </select>
+        </div>
+       
+        <!-- Conditionally render the rest of the filters based on which category they choose -->
+        <div class='form-group grid2'>
+          <label for='zipcode'>Zip Code:</label>
+          <input type='text' id='zipcode' name='zipcode' pattern=\b\d{5}\b />
+        </div>
+        <div class='form-group grid3'>
+          <label for='cost-rating'>Cost Rating:</label>
+          <select id='cost-rating' name='cost-rating'>
+            <option value=null></option>
+            <option value='1'>$</option>
+            <option value='2'>$$</option>
+            <option value='3'>$$$</option>
+            <option value='4'>$$$$</option>
+            <option value='5'>$$$$$</option>
+          </select>
+        </div>
+        
+        <button type='submit'>Let's See</button>
+      </fieldset>
+      
+    </form>
+  </div>
+  <div class='wheel-container'>
+    <canvas></canvas>
+  </div>
+  <hr />
+  <!-- Favorites, my recipes/restaurants view -->
+  <nav>
+    <ul>
+     <a href='#'><li>Favorites</li></a>
+     <a href='#'><li>My Restaurants</li></a>
+     <a href='#'><li>My Recipes</li></a>
+     <a href='#'><li>Add New</li></a>
+    </ul>
+  </nav>
+  <div class='category'>
+    <p>Category title</p>
+  </div>
+  <div class='item-container'>
+    <div class='item'>
+    <p>Item Name</p>
+    <button>Edit</button>
+    <button>Delete</button>
+  </div>
+  <div class='item'>
+    <p>Item Name</p>
+    <button>Edit</button>
+    <button>Delete</button>
+  </div>
+  <div class='item'>
+    <p>Item Name</p>
+    <button>Edit</button>
+    <button>Delete</button>
+  </div>
+  </div>
+  
+  
+
 </main>
 </body>
 </html>
