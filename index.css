@@ -63,3 +63,12 @@ h3 {
   height:200px;
   background-color:grey;
 }
+.item-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item {
+  border: black 2px solid;
+  padding: 5px;
+  margin: auto;
+}
