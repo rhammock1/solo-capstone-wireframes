@@ -96,6 +96,7 @@
 
   </div>
   <hr />
+  <!-- If time allows get to login screen and such -->
   <!-- login / signup signup is only different in the validation and their zip code and adding another password field to make sure they match -->
   <div class='login-container'>
     <form class='login-credentials'>
@@ -116,6 +117,7 @@
   </div>
   <hr />
   <!-- Logged in view home screen -->
+  <!-- Header component -->
 <header>
   <h1>What's For Dinner?</h1>
   <div>
@@ -123,7 +125,7 @@
     <a href='#'>Sign Out</a>
   </div>
 </header>
-
+<!-- Nav component -->
  <nav>
    <ul>
      <a href='#'><li>Favorites</li></a>
@@ -168,11 +170,13 @@
       
     </form>
   </div>
+  <!-- Wheel component -->
   <div class='wheel-container'>
     <canvas></canvas>
   </div>
   <hr />
-  <!-- Favorites, my recipes/restaurants view -->
+  <!-- Favorites, my recipes, my restaurants component 
+  all specific category names should be dynamic to increase reusability -->
   <nav>
     <ul>
      <a href='#'><li>Favorites</li></a>
@@ -202,7 +206,7 @@
   </div>
   </div>
   <hr />
-  <!-- Add new form component -->
+  <!-- Add new item form component -->
   <div class='form-container'>
     <form class='add-new-form'>
       <fieldset>
@@ -216,7 +220,7 @@
           </select>
         </div>
         <!-- Based on anser conditionally render the rest of the form -->
-        <!-- Restaurant -->
+        <!-- Add Restaurant form component -->
         <div class='form-group'>
           <label for='restaurant-name'>Restaurant name:</label>
           <input type="text" id='restaurant-name' name='restaurant-name' required/>
@@ -254,7 +258,7 @@
             </select>
         </div>
         
-        <!-- Recipes -->
+        <!-- add Recipe form component -->
         <div class='form-group'>
           <label for='recipe-name'>Recipe Name:</label>
           <input type="text" id='recipe-name' name='recipe-name' required/>
